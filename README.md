@@ -11,11 +11,7 @@ transformers >= 4.16.0
 To pretrain MVLT wtih Swin Transformer as the visual backbone, prepare 3 datasets, RGC, ROCO and MedICaT. Download  train/test split of RGC from [openI](https://openi.nlm.nih.gov/imgs/collections/RGC.zip) and put them in ```./dataset/RGC/``` so that they are organized like ```./datset/RGC/RGC_dataset.json```.
 ### RGC
 
-Run:
-```
-python download_rgc.py
-```
-This will download RGC dataset from MedPix automatically. By default, it will be saved in ```./dataset/RGC/```.
+> Due to the copyright issue, we cannot directly provide the dataset. If you are interested in this dataset, please send an email to li-control.xu@connect.polyu.hk and we will give the code for materializing the dataset.
 
 Run:
 ```
@@ -40,7 +36,7 @@ The pre-trained model will be saved in ```./checkpoints/swin-rgc-roco-medicat/``
 
 The pre-trained model (Swin-S + [RGC+ROCO+MedICaT]) can be found in [Google Drive](https://drive.google.com/file/d/1DKQ2IkULu_gfPBEPfD4vx72Vbx-49UU5/view?usp=share_link)
 
-One can also use Resnet101 as visual backbone by using the argument ```--conv resnet101```
+You can also use Resnet101 as visual backbone by using the argument ```--conv resnet101```
 
 ## Fine-tuning
 ### Medical Visual Question Answering (Med-VQA)
@@ -90,6 +86,6 @@ python run_seq2seq.py --batch 32 --conv swintransformer --pretrained --pretraine
 ```
 python run_retrieval.py --batch 32 --conv swintransformer --pretrained --pretrained_path ./checkpoints/swin-rgc-roco-medicat  --do_train --do_test --do_rank --epochs 100 --lr 1e-6
 ```
-One can directly train the models on the downstream tasks from scratch by removing the argument ```--pretrained```
+You can also directly train the models on the downstream tasks from scratch by removing the argument ```--pretrained```
 
 
