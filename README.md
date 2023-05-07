@@ -9,9 +9,10 @@ transformers >= 4.16.0
 
 ## Prepare for pre-training
 To pretrain MVLT wtih Swin Transformer as the visual backbone, prepare 3 datasets, RGC, ROCO and MedICaT. Download  train/test split of RGC from [openI](https://openi.nlm.nih.gov/imgs/collections/RGC.zip) and put them in ```./dataset/RGC/``` so that they are organized like ```./datset/RGC/RGC_dataset.json```.
+
 ### RGC
 
-> Due to the copyright issue, we cannot directly provide the dataset. If you are interested in this dataset, please send an email to li-control.xu@connect.polyu.hk and we will give the code for materializing the dataset.
+> The RGC dataset is hosted on [the MedPix website](https://medpix.nlm.nih.gov/). Due to copyright issues, we cannot directly release the dataset. If you need help in materializing the dataset, please send an email to li-control.xu@connect.polyu.hk .
 
 Run:
 ```
