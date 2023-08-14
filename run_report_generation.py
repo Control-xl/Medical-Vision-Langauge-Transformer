@@ -71,7 +71,7 @@ class ImageCaptionDataset(Dataset):
 
     def __getitem__(self, index):
 
-        img_path = self.img_idx2original_img_path[index]
+        img_path = self.img_idx2path[index]
         data_path = self.img_idx2path[index]
         if self.use_cache:
             im_np = self.cached_images[index]
