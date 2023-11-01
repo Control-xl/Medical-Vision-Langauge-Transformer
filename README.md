@@ -74,12 +74,12 @@ Download MIMIC-CXR and IU X-Ray from [G2GEN](https://github.com/cuhksz-nlp/R2Gen
 Put MIMIC-CXR in ```./dataset/mimic_cxr/```, Put IU X-Ray in ```./dataset/iu_xray/```
 
 ```
-python run_report_generation_cxr.py --batch 32 --conv swintransformer --pretrained --pretrained_path ./checkpoints/swin-rgc-roco-medicat --dataset mimic --test_frq 5
+python run_report_generation_cxr.py --batch 32 --conv swintransformer --pretrained --pretrained_path ./checkpoints/swin-rgc-roco-medicat --dataset mimic --test_freq 5
 ```
 
 ### Report Generation on RGC
 ```
-python run_report_generation.py --batch 32 --conv swintransformer --pretrained --pretrained_path ./checkpoints/swin-rgc-roco-medicat --test_frq 5 --beam_search
+python run_report_generation.py --batch 32 --conv swintransformer --pretrained --pretrained_path ./checkpoints/swin-rgc-roco-medicat --test_freq 5 --beam_search
 ```
 
 
