@@ -156,7 +156,7 @@ cython_debug/
 
 # ignore data files and checkpoint files
 dataset/*
-!dataset/RGC
+dataset/RGC
 !dataset/bert-base-uncased
 checkpoints/*
 results/
